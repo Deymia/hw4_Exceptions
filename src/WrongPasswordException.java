@@ -1,10 +1,10 @@
 public class WrongPasswordException extends Exception{
 
-    public WrongPasswordException (Throwable e){
-        super(e);
+    public WrongPasswordException (Throwable passwordExc){
+        super(passwordExc);
     }
 
-    public WrongPasswordException(){
-        super();
+    public WrongPasswordException(String message){
+        super(message);
     }
 }
